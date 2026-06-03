@@ -15,10 +15,10 @@ export function Header() {
           <a href="#features" className="hover:text-foreground transition-colors">機能</a>
           <a href="#how" className="hover:text-foreground transition-colors">仕組み</a>
           <a href="#pricing" className="hover:text-foreground transition-colors">料金</a>
-          <Link to="/dashboard" className="hover:text-foreground transition-colors">ダッシュボード</Link>
+          <Link to="/auth" className="hover:text-foreground transition-colors">ログイン</Link>
         </nav>
         <Link
-          to="/dashboard"
+          to="/auth"
           className="inline-flex items-center h-9 px-4 rounded-lg bg-gradient-primary text-primary-foreground text-sm font-medium shadow-glow hover:opacity-90 transition"
         >
           無料で始める
