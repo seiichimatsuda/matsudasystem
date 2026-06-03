@@ -11,6 +11,17 @@ import { listLeads, createLead, deleteLead } from "@/lib/leads.functions";
 import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
+type LeadInput = {
+  company: string;
+  industry?: string | null;
+  contact_name?: string | null;
+  contact_title?: string | null;
+  email?: string | null;
+  score: number;
+  status: "Hot" | "Warm" | "Cold";
+  notes?: string | null;
+};
+
 const leadsQuery = queryOptions({
   queryKey: ["leads"],
   queryFn: () => listLeads(),
