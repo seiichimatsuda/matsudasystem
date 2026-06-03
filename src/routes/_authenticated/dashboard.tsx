@@ -68,7 +68,7 @@ function Dashboard() {
   const deleteFn = useServerFn(deleteLead);
 
   const createMut = useMutation({
-    mutationFn: (input: Parameters<typeof createLead>[0]["data"]) => createFn({ data: input }),
+    mutationFn: (input: LeadInput) => createFn({ data: input }),
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ["leads"] });
       toast.success("リードを追加しました");
@@ -325,7 +325,7 @@ function AddLeadDialog({
   loading,
 }: {
   onClose: () => void;
-  onSubmit: (d: Parameters<typeof createLead>[0]["data"]) => void;
+  onSubmit: (d: LeadInput) => void;
   loading: boolean;
 }) {
   const [form, setForm] = useState({
