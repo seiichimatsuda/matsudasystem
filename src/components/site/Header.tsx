@@ -9,7 +9,7 @@ export function Header() {
           <div className="size-8 rounded-lg bg-gradient-primary grid place-items-center shadow-glow">
             <Sparkles className="size-4 text-primary-foreground" />
           </div>
-          <span className="font-display font-bold text-lg tracking-tight">Leadflow<span className="text-primary-glow">.ai</span></span>
+          <span className="font-display font-bold text-lg tracking-tight">Matsuda System <span className="text-primary-glow">Labs</span></span>
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
           <a href="#features" className="hover:text-foreground transition-colors">機能</a>
