@@ -31,7 +31,7 @@ export function Footer() {
   return (
     <footer className="border-t border-border py-12">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-muted-foreground">
-        <div>© 2026 Leadflow.ai · AI-Powered Lead Generation</div>
+        <div>© 2026 Matsuda System Labs</div>
         <div className="flex gap-6">
           <a href="#" className="hover:text-foreground">利用規約</a>
           <a href="#" className="hover:text-foreground">プライバシー</a>
