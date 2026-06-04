@@ -1,13 +1,13 @@
 import { Link } from "@tanstack/react-router";
-import { Sparkles } from "lucide-react";
+import mslLogo from "@/assets/msl-logo.png.asset.json";
 
 export function Header() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 glass">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex items-center gap-2 group">
-          <div className="size-8 rounded-lg bg-gradient-primary grid place-items-center shadow-glow">
-            <Sparkles className="size-4 text-primary-foreground" />
+          <div className="size-8 rounded-lg bg-white grid place-items-center shadow-glow overflow-hidden">
+            <img src={mslLogo.url} alt="Matsuda System Labs" className="size-8 object-contain" />
           </div>
           <span className="font-display font-bold text-lg tracking-tight">Matsuda System <span className="text-primary-glow">Labs</span></span>
         </Link>
