@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import {
   Sparkles, Search, Bell, ChevronRight, TrendingUp, Users, Target, Zap,
-  Building2, ArrowUpRight, MoreHorizontal, Plus, Loader2, Trash2,
+  Building2, Mail, Star, ArrowUpRight, MoreHorizontal, Plus, Loader2, LogOut, Trash2,
 } from "lucide-react";
 import { listLeads, createLead, deleteLead } from "@/lib/leads.functions";
+import { supabase } from "@/integrations/supabase/client";
 import { toast } from "sonner";
 
 type LeadInput = {
