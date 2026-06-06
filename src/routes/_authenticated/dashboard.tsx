@@ -272,10 +272,8 @@ function Dashboard() {
             </div>
           </motion.div>
         </main>
-      </div>
-
       {open && <AddLeadDialog onClose={() => setOpen(false)} onSubmit={(d) => createMut.mutate(d)} loading={createMut.isPending} />}
-    </div>
+    </>
   );
 }
 
