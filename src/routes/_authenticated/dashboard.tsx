@@ -107,47 +107,7 @@ function Dashboard() {
   const initials = (user?.email ?? "U").slice(0, 2).toUpperCase();
 
   return (
-    <div className="min-h-screen bg-background">
-      <aside className="fixed inset-y-0 left-0 w-60 border-r border-border bg-sidebar p-5 hidden lg:flex flex-col">
-        <Link to="/" className="flex items-center gap-2 mb-10">
-          <div className="size-8 rounded-lg bg-gradient-primary grid place-items-center shadow-glow">
-            <Sparkles className="size-4 text-primary-foreground" />
-          </div>
-          <span className="font-display font-bold tracking-tight">Leadflow.ai</span>
-        </Link>
-
-        <nav className="space-y-1 text-sm">
-          {[
-            { icon: TrendingUp, label: "概要", active: true },
-            { icon: Users, label: "リード" },
-            { icon: Target, label: "キャンペーン" },
-            { icon: Mail, label: "メッセージ" },
-            { icon: Star, label: "お気に入り" },
-          ].map((i) => (
-            <button
-              key={i.label}
-              className={`w-full flex items-center gap-3 px-3 py-2 rounded-lg transition ${
-                i.active
-                  ? "bg-sidebar-accent text-foreground"
-                  : "text-muted-foreground hover:bg-sidebar-accent/50 hover:text-foreground"
-              }`}
-            >
-              <i.icon className="size-4" />
-              {i.label}
-            </button>
-          ))}
-        </nav>
-
-        <button
-          onClick={handleLogout}
-          className="mt-auto flex items-center gap-2 px-3 py-2 rounded-lg text-sm text-muted-foreground hover:text-foreground hover:bg-sidebar-accent/50 transition"
-        >
-          <LogOut className="size-4" />
-          ログアウト
-        </button>
-      </aside>
-
-      <div className="lg:pl-60">
+    <>
         <header className="h-16 border-b border-border flex items-center justify-between px-6 sticky top-0 bg-background/80 backdrop-blur-xl z-10">
           <div className="relative w-full max-w-md">
             <Search className="size-4 absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" />
