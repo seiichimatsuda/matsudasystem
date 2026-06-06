@@ -1,10 +1,13 @@
 import { createFileRoute, useNavigate, Link } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { Sparkles, Loader2 } from "lucide-react";
+import { Loader2 } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { lovable } from "@/integrations/lovable/index";
 import { toast } from "sonner";
+import mslLogoAsset from "@/assets/msl-logo.png.asset.json";
+
+const mslLogo = mslLogoAsset.url;
 
 export const Route = createFileRoute("/auth")({
   head: () => ({ meta: [{ title: "ログイン — Leadflow.ai" }] }),
