@@ -10,7 +10,7 @@ import mslLogoAsset from "@/assets/msl-logo.png.asset.json";
 const mslLogo = mslLogoAsset.url;
 
 export const Route = createFileRoute("/auth")({
-  head: () => ({ meta: [{ title: "ログイン — Leadflow.ai" }] }),
+  head: () => ({ meta: [{ title: "ログイン — Matsuda System Labs" }] }),
   component: AuthPage,
 });
 
@@ -74,10 +74,10 @@ function AuthPage() {
         className="relative w-full max-w-md p-8 rounded-2xl bg-card border border-border shadow-elegant"
       >
         <Link to="/" className="flex items-center gap-2 mb-8">
-          <div className="size-9 rounded-lg bg-gradient-primary grid place-items-center shadow-glow">
-            <Sparkles className="size-4 text-primary-foreground" />
+          <div className="size-9 rounded-lg bg-white grid place-items-center shadow-glow overflow-hidden">
+            <img src={mslLogo} alt="Matsuda System Labs" className="size-9 object-contain" />
           </div>
-          <span className="font-display font-bold tracking-tight">Leadflow.ai</span>
+          <span className="font-display font-bold tracking-tight">Matsuda System <span className="text-primary-glow">Labs</span></span>
         </Link>
 
         <h1 className="text-2xl font-display font-bold mb-1">
