@@ -1,5 +1,7 @@
 import { Link } from "@tanstack/react-router";
-import mslLogo from "../../assets/msl-logo.png";
+import mslLogoAsset from "@/assets/msl-logo.png.asset.json";
+
+const mslLogo = mslLogoAsset.url;
 
 export function Header() {
   return (
